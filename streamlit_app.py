@@ -18,11 +18,11 @@ BACKEND_DIR = ROOT_DIR / "backend"
 if str(BACKEND_DIR) not in sys.path:
     sys.path.insert(0, str(BACKEND_DIR))
 
-from services.formatter import format_document
-from services.north_college_profile import build_north_college_profile
-from services.report_builder import write_reports
-from services.student_analyzer import analyze_student_document
-from services.template_analyzer import analyze_template
+from app.services.formatter import format_document
+from app.services.north_college_profile import build_north_college_profile
+from app.services.report_builder import write_reports
+from app.services.student_analyzer import analyze_student_document
+from app.services.template_analyzer import analyze_template
 
 
 MAX_UPLOAD_MB = 50
